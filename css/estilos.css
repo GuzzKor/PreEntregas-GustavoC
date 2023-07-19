@@ -43,10 +43,16 @@ h3{
 }
 
 h4{
-     font-size: 1.5rem;
+     font-size: 1.6rem;
      font-family: 'Poppins', sans-serif;
      font-weight: 700;
      color:#4a47c7;
+}
+
+@media screen and (min-width: 992px) {
+    h3{
+        font-size: 1.8rem;
+    }
 }
 
  p{
@@ -144,13 +150,22 @@ header nav .navbar-nav {
     border: none;
 }
 
-.original-inicio-bgimg {
-    background: 
-        linear-gradient(rgba(0, 140, 255, 0.5), rgba(0, 0, 0, 0.5)), 
-        url('../assets/img/herramientas-img2.jpg');
-    object-fit: cover;
+.original-inicio-cardcolor-1 {
+    background-color: #ffad5c;
     border-radius: 10px;
-    height: 15rem;
+    height: 20rem;
+}
+
+.original-inicio-cardcolor-2 {
+    background-color: #2d3268;
+    border-radius: 10px;
+    height: 20rem;
+}
+
+.original-inicio-cardcolor-3 {
+    background-color: #f73656;
+    border-radius: 10px;
+    height: 20rem;
 }
 
 /* FOOTER ---------------------------------------------------------------------------------------------- */
