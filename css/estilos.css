@@ -198,11 +198,242 @@ header nav .navbar-nav {
 }
 
 
+/* CONTACTO ---------------------------------------------------- */
+/* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
+
+.seccionCentrada{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.seccionCentrada p{
+    font-size: 22px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3%;
+    color: #1f2141;
+    font-weight: 700;
+}
+
+.seccionCentrada H1{
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #4a47c7;
+}
 
 
+.formSections {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;  
+}
+
+.formularioGeneral{
+    background-color: #ffad5c;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 10%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:#1f2141;
+}
+
+.formularioGeneral input, textarea {
+    width: 80%;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color:#1f2141;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffe7cf;
+    text-align: left;
+}
+
+/* HERRAMIENTAS ------------------------------------------------------------------ */
+/* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
+
+.topSectionsHerramientas {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.topSectionsHerramientas p{
+    font-size: 21px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.topSectionsHerramientas H1{
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.topSectionsHerramientas img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #1f2141;
+}
+
+.medSectionsHerramientas1 {
+    display: inline-block;
+    box-sizing: border-box; 
+    width: 20%;
+    vertical-align: middle;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-top: 3%;
+}
+
+.medSectionsHerramientas1 img {
+    width: 60%;
+    float: right;
+    padding-bottom: 20px;
+}
+
+.medSectionsHerramientas2 {
+    display: inline-block;
+    box-sizing: border-box; 
+    width: 35%;
+    vertical-align: middle;
+    padding-left: 3%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    padding-top: 3%;
+}
+
+.medSectionsHerramientas2 p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d3268;
+}
+
+.medSectionsHerramientas2 h4{
+    font-size: 28px;
+    color:#f73656;
+}
+
+.medSectionsHerramientas3 {
+    display: inline-block;
+    box-sizing: border-box; 
+    width: 35%;
+    vertical-align: middle;
+    padding-left: 3%;
+    padding-right: 5%;
+    padding-bottom: 40px;
+    padding-top: 5%;
+}
+
+.medSectionsHerramientas3 li {
+    list-style: disc;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:#2d3268;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: #f1e7ff;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.seccionHerramientas1 {
+    background-color: #fbf8ff;
+    padding-bottom: 10%;
+}
+
+.seccionHerramientas2 {
+    background-color: #f6f0ff;
+    padding-bottom: 2%;
+}
 
 
+/* TUTORIALES ------------------------------------------------------------- */
+/* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
 
+.topSectionsTutoriales{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 1%;
+    background-color: #1f2141;
+    background-image: url(https://www.marketingaiinstitute.com/hs-fs/hubfs/2022%20Website%20Redesign/Background%20Graphics/MAII_Backgrounds_hexagonal-wave.jpg?width=1600&height=900&name=MAII_Backgrounds_hexagonal-wave.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.topSectionsTutoriales div{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.topSectionsTutoriales p{
+    font-size: 23px;
+    color: #fcfaff;
+}
+
+.topSectionsTutoriales h1{
+    font-size: 50px;
+    color: #4a47c7;
+}
+
+.tutorialesTemas {
+    padding-top: 3%
+    
+}
+
+.tutorialesTemas div {
+    background-color: #4a47c7;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:#ffad5c;
+    display: inline-block;
+    width: 19%;
+    height: 90px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.medSectionsTutoriales1 {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 1% 5px 5% 3%;
+    text-align: left;
+}
+
+.medSectionsTutoriales2 {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 4% 2% 4%;
+    text-align: left;
+}
 
 
 
