@@ -48,42 +48,195 @@
     </header>
 
     <main>
-        <section class="seccionFondo1"> <!--Seccion superior con imagen-->
-            <div class="topSectionsNoticias">
-                <H1>Las últimas novedades y
-                    noticias sobre IA</H1>
-                <p>¡Mantente al día con las últimas noticias sobre IA!
-                    Aquí te traemos las noticias y actualizaciones más
-                    recientes de todo el mundo de la Inteligencia
-                    Artificial.
-                    </p>
-            </div>
-            <div class="topSectionsNoticias">
-                <img src="../assets/img/noticias-img1.jpg" alt="noticias-ia">
+        <section class="original-noticias-section-bg"> <!--Seccion superior con imagen-------------------->
+            <div class="container py-4">
+                <div class="row py-5 d-flex align-items-center gx-5">
+                    <div class="pb-5 col-12 col-lg-6">
+                        <H1 class="text-white mb-4">Las últimas novedades y
+                        noticias sobre IA</H1>
+                        <p class="fw-bolder">¡Mantente al día con las últimas noticias sobre IA!
+                        Aquí te traemos las noticias y actualizaciones más
+                        recientes de todo el mundo de la Inteligencia
+                        Artificial.
+                        </p>
+                        <button class="btn-lg original-btn-primary-white">Recibir Noticias</button>
+                    </div>
+                    <div class="pb-5 col-12 col-lg-6">
+                        <img class="original-img-style-1" src="../assets/img/noticias-img1.jpg" alt="noticias-ia">
+                    </div>
+                </div>    
             </div>
         </section>
+
         <section> <!--seccion de noticias-->
-            <div class="medSectionsNoticias">
-                <img src="../assets/img/noticias-img2.jpg" alt="noticia2">
-                <h4><a href="https://www.diariolibre.com/revista/buena-vida/2023/06/18/la-inteligencia-artificial-en-la-medicina-es-un-exito/2348639" target="_blank">La IA Transforma la Medicina Moderna</a></h4>
-                <p>Los avances en la Inteligencia Artificial están revolucionando el sector de la salud. Desde la detección temprana de enfermedades hasta la personalización de tratamientos, la IA está marcando una nueva era en la medicina.</p>
-            </div>
-            <div class="medSectionsNoticias">
-                <img src="../assets/img/noticias-img3.jpg" alt="noticia3">
-                <h4><a href="https://www.interempresas.net/Grandes-cultivos/Articulos/465242-agricultura-precision-Inteligencia-Artificial-tendencias-sector-agroalimentario-2023.html" target="_blank">¿IA en la Agricultura? Un futuro más Verde</a></h4>
-                <p>La IA llega al campo y promete una agricultura más eficiente y sostenible. Las nuevas tecnologías permiten predecir el clima, optimizar el riego y combatir plagas de manera más efectiva.</p>
-            </div>
-            <div class="medSectionsNoticias">
-                <img src="../assets/img/noticias-img4.jpg" alt="noticia4">
-                <h4><a href="https://forbes.es/education/73331/estas-son-las-cinco-principales-tendencias-en-educacion-de-2023/" target="_blank">Inteligencia Artificial en la Educación: Aulas del Futuro</a></h4>
-                <p>La IA se está integrando en las aulas de todo el mundo, permitiendo una educación más personalizada y accesible. Desde tutores virtuales hasta la detección de dificultades de aprendizaje, la IA está redefiniendo cómo aprendemos.</p>
-            </div>
-            <div class="medSectionsNoticias">
-                <img src="../assets/img/noticias-img5.jpg" alt="noticia5">
-                <h4><a href="https://www.jornada.com.mx/notas/2023/03/10/cultura/obras-creadas-por-la-ia-ya-ocupan-un-lugar-en-el-mercado-del-arte/" target="_blank">IA en el Arte: Cuando las Máquinas se vuelven Creativas</a></h4>
-                <p>La IA no solo está cambiando cómo se crea el arte, sino también cómo se aprecia. Los artistas están utilizando la IA para generar nuevas obras, mientras que los museos usan la IA para atraer y educar a los visitantes.</p>
+            <div class="container py-5">
+                <h3 class="my-5 py-4 text-center">Noticias Destacadas</h3>
+                <div class="row row row-cols-1 row-cols-md-2 g-5 mb-3">
+                    <div class="col"> <!-- NOTICIA NUMERO 1 ------------------------------------->
+                        <div class="card">
+                            <img class="edit-inicio-card-img" src="../assets/img/noticias-img2.jpg" class="card-img-top" alt="noticia2">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://www.diariolibre.com/revista/buena-vida/2023/06/18/la-inteligencia-artificial-en-la-medicina-es-un-exito/2348639">La IA Transforma la Medicina Moderna</a></h5>
+                                <p class="card-text">Los avances en la Inteligencia Artificial están revolucionando el sector de la salud. Desde la detección temprana de enfermedades hasta la personalización de tratamientos, la IA está marcando una nueva era en la medicina.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <p class="text-body">15-Julio-2023</p>
+                                <a href="https://www.diariolibre.com/revista/buena-vida/2023/06/18/la-inteligencia-artificial-en-la-medicina-es-un-exito/2348639" class="card-text fw-bold">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"> <!-- NOTICIA NUMERO 2 ------------------------------------->
+                        <div class="card">
+                            <img class="edit-inicio-card-img" src="../assets/img/noticias-img3.jpg" class="card-img-top" alt="noticia3">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://www.interempresas.net/Grandes-cultivos/Articulos/465242-agricultura-precision-Inteligencia-Artificial-tendencias-sector-agroalimentario-2023.html">¿IA en la Agricultura? Un futuro más Verde</a></h5>
+                                <p class="card-text">La IA llega al campo y promete una agricultura más eficiente y sostenible. Las nuevas tecnologías permiten predecir el clima, optimizar el riego y combatir plagas de manera más efectiva.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <p class="text-body">12-Julio-2023</p>
+                                <a href="https://www.interempresas.net/Grandes-cultivos/Articulos/465242-agricultura-precision-Inteligencia-Artificial-tendencias-sector-agroalimentario-2023.html" class="card-text fw-bold">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"> <!-- NOTICIA NUMERO 3 ------------------------------------->
+                        <div class="card">
+                            <img class="edit-inicio-card-img" src="../assets/img/noticias-img4.jpg" class="card-img-top" alt="noticia4">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://forbes.es/education/73331/estas-son-las-cinco-principales-tendencias-en-educacion-de-2023/">Inteligencia Artificial en la Educación: Aulas del Futuro</a></h5>
+                                <p class="card-text">La IA se está integrando en las aulas de todo el mundo, permitiendo una educación más personalizada y accesible. Desde tutores virtuales hasta la detección de dificultades de aprendizaje, la IA está redefiniendo cómo aprendemos.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <p class="text-body">10-Julio-2023</p>
+                                <a href="https://forbes.es/education/73331/estas-son-las-cinco-principales-tendencias-en-educacion-de-2023/" class="card-text fw-bold">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"> <!-- NOTICIA NUMERO 4 ------------------------------------->
+                        <div class="card">
+                            <img class="edit-inicio-card-img" src="../assets/img/noticias-img5.jpg" class="card-img-top" alt="noticia5">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="https://www.jornada.com.mx/notas/2023/03/10/cultura/obras-creadas-por-la-ia-ya-ocupan-un-lugar-en-el-mercado-del-arte/">IA en el Arte: Cuando las Máquinas se vuelven Creativas</a></h5>
+                                <p class="card-text">La IA no solo está cambiando cómo se crea el arte, sino también cómo se aprecia. Los artistas están utilizando la IA para generar nuevas obras, mientras que los museos usan la IA para atraer y educar a los visitantes.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <p class="text-body">08-Julio-2023</p>
+                                <a href="https://www.jornada.com.mx/notas/2023/03/10/cultura/obras-creadas-por-la-ia-ya-ocupan-un-lugar-en-el-mercado-del-arte/" class="card-text fw-bold">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>        
+        </section>
+
+        <section>
+            <div class="container py-5">
+                <h3 class="my-4 py-4 text-center">Todas las Novedades de IA:</h3>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 my-3">
+                    <div class="col">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-4 col-md-4 d-flex align-items-center">
+                                <img src="../assets/img/allnews-1.webp" class="original-img-style-2 rounded-start" alt="news-1">
+                                </div>
+                                <div class="col-8 col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold"><a href="https://www.forbes.com/sites/gilpress/2023/07/17/diagnostic-robotics-ai-advances-predictive-personalized-medicine/">IA de diagnóstico avanza en medicina personalizada.</a></h5>
+                                        <p class="card-text"><small class="text-body-secondary">17 de julio de 2023
+                                        </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-4 col-md-4 d-flex align-items-center">
+                                <img src="../assets/img/allnews-2.webp" class="original-img-style-2 rounded-start" alt="news-2">
+                                </div>
+                                <div class="col-8 col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold"><a href="https://www.forbes.com/sites/hessiejones/2023/07/17/admission-overseas-pioneering-international-student-recruitment-with-generative-ai/">Admisión en el extranjero: Reclutamiento de estudiantes con IA.</a></h5>
+                                        <p class="card-text"><small class="text-body-secondary">15 de julio de 2023
+                                        </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-4 col-md-4 d-flex align-items-center">
+                                <img src="../assets/img/allnews-3.webp" class="original-img-style-2 rounded-start" alt="news-3">
+                                </div>
+                                <div class="col-8 col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold"><a href="https://www.forbes.com/sites/hessiejones/2023/07/17/oro-health-a-quebec-startup-is-changing-the-landscape-for-healthcare-diagnosis/">ORO Health, una startup de Quebec, cambia el diagnóstico médico.</a></h5>
+                                        <p class="card-text"><small class="text-body-secondary">13 de julio de 2023
+                                        </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-4 col-md-4 d-flex align-items-center">
+                                <img src="../assets/img/allnews-4.webp" class="original-img-style-2 rounded-start" alt="news-4">
+                                </div>
+                                <div class="col-8 col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold"><a href="https://www.forbes.com/sites/lanceeliot/2023/07/17/generative-ai-and-data-science-have-mightily-paired-up-to-reinvent-data-strategies-exemplified-via-release-of-openais-chatgpt-code-interpreter/">IA generativa y ciencia de datos: reinventando estrategias.</a></h5>
+                                        <p class="card-text"><small class="text-body-secondary">11 de julio de 2023
+                                        </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-4 col-md-4 d-flex align-items-center">
+                                <img src="../assets/img/allnews-5.webp" class="original-img-style-2 rounded-start" alt="news-5">
+                                </div>
+                                <div class="col-8 col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold"><a href="https://www.forbes.com/sites/thomasbrewster/2023/07/17/license-plate-reader-ai-criminal/">Esta IA observa millones de autos diariamente.</a></h5>
+                                        <p class="card-text"><small class="text-body-secondary">9 de julio de 2023
+                                        </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-4 col-md-4 d-flex align-items-center">
+                                <img src="../assets/img/allnews-6.webp" class="original-img-style-2 rounded-start" alt="news-6">
+                                </div>
+                                <div class="col-8 col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold"><a href="https://www.forbes.com/sites/katiejennings/2023/07/17/this-ai-chatbot-has-helped-doctors-treat-3-million-people/">Chatbot con IA ayuda a tratar a 3 millones de personas.</a></h5>
+                                        <p class="card-text"><small class="text-body-secondary">7 de julio de 2023
+                                        </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    
+                    
+
+                </div>
             </div>           
         </section>
+        
+
     </main>
 
 
@@ -97,7 +250,7 @@
                 <div class="col-lg-3 offset-lg-0 mb-5">
                     <ul class="pe-3 list-unstyled contenidoFooter">
                         <li class="fw-light">Organización sin fines de lucro, creada para la democratización de la tecnología y la Inteligencia Artificial.</li>
-                        <li class="fw-bold">Copyright 2023</li>
+                        <li class="fw-bold">Aprendai.com | Copyright 2023</li>
                     </ul> 
                     <iframe class="rounded-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240640.11279059734!2d-99.13408674677733!3d19.541537901165796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc8c518db8b%3A0x962ca10e2989f407!2sWeWork%20Espacio%20de%20Oficinas%20%26%20Coworking%20Torre%20Mitikah!5e0!3m2!1ses-419!2smx!4v1689566475092!5m2!1ses-419!2smx" width="90%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>

@@ -71,6 +71,14 @@ h4{
     border-color: #2c5491;
 }
 
+.original-btn-primary-white {
+    font-family: 'Poppins', sans-serif;  /* reemplaza Fuente de botón suscribirse */
+    background-color: #ffffff;
+    color: #4a47c7;
+    border: none;
+    font-weight: 500;
+}
+
 .card-title {
     font-family: 'Poppins', sans-serif;
     color: #4a47c7;
@@ -117,6 +125,7 @@ header nav .navbar-nav {
 
 /* MAIN ---------------------------------------------------------------------------------------------- */
 
+/* HOME ---------------------------------------------------------------------------------------------- */
 .original-inicio-section-bg {
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
@@ -167,6 +176,37 @@ header nav .navbar-nav {
     border-radius: 10px;
     height: 20rem;
 }
+
+/* NOTICIAS ---------------------------------------------------------------------------------------------- */
+
+.original-noticias-section-bg {
+    background-image: linear-gradient(to right, #4774c7, #426dc9, #4065c9, #405dca, #4354c9, #4850c8, #4d4cc7, #5247c6, #5847c6, #5d47c5, #6247c5, #6747c4);
+}
+
+.original-img-style-1 {
+    height: 22rem;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #1f2141;
+}
+
+.original-img-style-2 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER ---------------------------------------------------------------------------------------------- */
 
