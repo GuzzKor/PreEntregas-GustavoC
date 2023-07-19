@@ -39,7 +39,7 @@ h3{
      font-size: 2.5rem;
      font-family: 'Poppins', sans-serif;
      font-weight: 700;
-     color:#fff;
+     color:#4a47c7;
 }
 
 h4{
@@ -55,14 +55,6 @@ h4{
      font-family: 'Inter', sans-serif;
      font-weight: 500;
      color:#1f2141;
-}
-
-.p1-white{
-    text-decoration: none;
-     font-size: 1rem;
-     font-family: 'Inter', sans-serif;
-     font-weight: 500;
-     color:#ffffff;
 }
 
 /* SOBRESCRITURAS DE CLASES DE BOOTSTRAP GENERALES ------------------------------------------------------------------------------- */
@@ -88,6 +80,7 @@ h4{
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
 }
+
 /* HEADER NAV ---------------------------------------------------------------------------------------- */
 
 .header--logo {
@@ -149,6 +142,15 @@ header nav .navbar-nav {
 .edit-inicio-med-card {
     border-radius: 10px;
     border: none;
+}
+
+.original-inicio-bgimg {
+    background: 
+        linear-gradient(rgba(0, 140, 255, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('../assets/img/herramientas-img2.jpg');
+    object-fit: cover;
+    border-radius: 10px;
+    height: 15rem;
 }
 
 /* FOOTER ---------------------------------------------------------------------------------------------- */
