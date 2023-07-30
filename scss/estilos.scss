@@ -30,19 +30,49 @@ $color-gradiente-primario: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 $fuente-resalte: 'Poppins', sans-serif;
 $fuente-contenido: 'Inter', sans-serif;
 
+/* ---------------------MAPAS ------------------------------------------------------------------------------- */
+
+$fuente-grosores: (
+    delgado: 200,
+    light: 300,
+    regular: 400,
+    medio: 500,
+    semi-bold: 600,
+    bold: 700,
+    super-bold: 800
+);
+
+$fuente-tamaños: (
+    extra-chico: 0.8rem,
+    chico: 0.9rem,
+    regular: 1rem,
+    medio: 1.2rem,
+    medio-grande: 1.6rem,
+    grande: 1.8rem,
+    super-grande: 2.5rem,
+    extra-grande: 3.5rem  
+);
+
+$borde-radios: (
+    redondear-chico: 5px,
+    redondear-medio: 10px,
+    redondear-grande: 20px,
+    redondear-semicirculo: 50%,
+    redondear-completo: 100%
+);
 
 /* TITULOS Y PARRAFOS GENERALES ------------------------------------------------------------------------------- */
 h1{
     text-decoration: none;
-     font-size: 3.5rem;
+     font-size: map-get($fuente-tamaños, extra-grande);
      font-family: $fuente-resalte;
-     font-weight: 800;
+     font-weight: map-get($fuente-grosores, super-bold);
      color:$color-resalte-principal;
 }
 
 h2{
     text-decoration: none;
-     font-size: 3rem;
+     font-size: map-get($fuente-tamaños, super-grande);
      font-family: $fuente-resalte;
      font-weight: 600;
      color:$color-resalte-principal;
@@ -50,14 +80,14 @@ h2{
 
 h3{
     text-decoration: none;
-     font-size: 2.5rem;
+     font-size: map-get($fuente-tamaños, super-grande);
      font-family: $fuente-resalte;
      font-weight: 700;
      color:$color-resalte-principal;
 }
 
 h4{
-     font-size: 1.6rem;
+     font-size: map-get($fuente-tamaños, medio-grande);
      font-family: $fuente-resalte;
      font-weight: 700;
      color:$color-resalte-principal;
@@ -65,13 +95,13 @@ h4{
 
 @media screen and (min-width: 992px) {
     h3{
-        font-size: 1.8rem;
+        font-size: map-get($fuente-tamaños, grande);
     }
 }
 
  p{
     text-decoration: none;
-     font-size: 1.2rem;
+     font-size: map-get($fuente-tamaños, medio);
      font-family: $fuente-contenido;
      font-weight: 500;
      color:$color-texto-general;
@@ -150,7 +180,7 @@ header nav .navbar-nav {
 }
 
 .original-inicio-med-div {
-    border-radius: 20px;
+    border-radius: map-get($borde-radios, redondear-grande);
     background-color: $color-resalte-principal;
 }
 
@@ -159,7 +189,7 @@ header nav .navbar-nav {
     width: 4rem;
     height: 4rem;
     padding: 1rem 1rem;
-    border-radius: 50%;
+    border-radius: map-get($borde-radios, redondear-semicirculo);
 }
 
 .edit-inicio-med-card-img {
@@ -169,25 +199,25 @@ header nav .navbar-nav {
 }
 
 .edit-inicio-med-card {
-    border-radius: 10px;
+    border-radius: map-get($borde-radios, redondear-medio);
     border: none;
 }
 
 .original-inicio-cardcolor-1 {
     background-color: $color-terciario;
-    border-radius: 10px;
+    border-radius: map-get($borde-radios, redondear-medio);
     height: 20rem;
 }
 
 .original-inicio-cardcolor-2 {
     background-color: $color-paleta-oscuro;
-    border-radius: 10px;
+    border-radius: map-get($borde-radios, redondear-medio);
     height: 20rem;
 }
 
 .original-inicio-cardcolor-3 {
     background-color: $color-resalte-secundario;
-    border-radius: 10px;
+    border-radius: map-get($borde-radios, redondear-medio);
     height: 20rem;
 }
 
@@ -200,7 +230,7 @@ header nav .navbar-nav {
 .original-img-style-1 {
     height: 22rem;
     width: 100%;
-    border-radius: 10px;
+    border-radius: map-get($borde-radios, redondear-medio);
     object-fit: cover;
     border: 3px solid $color-texto-general; 
 }
