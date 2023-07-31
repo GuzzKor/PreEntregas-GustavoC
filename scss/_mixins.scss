@@ -1,0 +1,10 @@
+/*-----MIXINES---------------------------------------------------------------*/
+
+@mixin original-img-style-cover ($height) {
+    height: $height;
+    width: 100%;
+    border-radius: map-get($borde-radios, redondear-medio);
+    object-fit: cover;
+    border: 3px solid $color-texto-general;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.2);
+}
