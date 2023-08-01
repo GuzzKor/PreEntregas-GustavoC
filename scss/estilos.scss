@@ -1,19 +1,8 @@
+@import 'variables.scss';
 @import 'fuentes.scss';
-@import 'reset.scss';
+@import 'resets.scss';
 @import 'mixins.scss';
 
-/* ---------------------VARIABLES ------------------------------------------------------------------------------- */ 
-
-$color-resalte-principal: #4a47c7;
-$color-resalte-secundario: #f73656;
-$color-terciario: #ffad5c;
-$color-paleta-oscuro: #2d3268;
-$color-paleta-claro: #f8f9fa;
-$color-texto-general: #1f2141;
-$color-gradiente-primario: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-
-$fuente-resalte: 'Poppins', sans-serif;
-$fuente-contenido: 'Inter', sans-serif;
 
 /* ---------------------MAPAS ------------------------------------------------------------------------------- */
 
@@ -87,20 +76,56 @@ h4{
      color:$color-texto-general;
 }
 
+/* CLASES UTILITARIAS  ---------------------------------------------------------------------------------------- */
+
+.color-rp {
+    color: $color-resalte-principal;
+}
+.color-rs {
+    color: $color-resalte-secundario;
+}
+.color-r3 {
+    color: $color-terciario;
+}
+.color-p-claro {
+    color: $color-paleta-claro;
+}
+.color-p-oscuro {
+    color: $color-paleta-oscuro;
+}
+.color-t-general {
+    color: $color-texto-general;
+}
+
+.padd-y-chico {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.padd-y-medio {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.padd-y-grande {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.bg-black {
+    background-color: black;
+}
 /* SOBRESCRITURAS DE CLASES DE BOOTSTRAP GENERALES ------------------------------------------------------------------------------- */
 
 .btn-primary {
-    font-family: $fuente-resalte;  /* reemplaza Fuente de botón suscribirse */
-    background-color: $color-resalte-principal;
-    border-color: $color-paleta-oscuro;
+    @include original-btn-custom ($color:#fff,$grosor:500,$padding-x:3rem);
+    margin-bottom: 0px;
+    width: auto;
 }
 
 .original-btn-primary-white {
-    @extend .btn-primary;
-    color: $color-resalte-principal;
-    background-color: #ffffff;
-    border: none;
-    font-weight: map-get($fuente-grosores, semi-bold);
+    @include original-btn-custom ($color:$color-resalte-principal,$bg-color:#fff,$estilo-borde:none,$padding-x:3rem);
+    width: auto;
 }
 
 .card-title {
@@ -132,19 +157,25 @@ h4{
     font-weight: 600;
   }
 
-header nav div div .btn-primary:hover {
-    background-color: #4d77ff;
-}
-
-header nav .container-fluid {
-    display: flex;
-    justify-content: center;
-}
-
-header nav .navbar-nav {
-    flex-grow: 1;
-    justify-content: center;
-}
+header {
+    nav {
+        .container-fluid {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-nav {
+            flex-grow: 1;
+            justify-content: center;
+        }
+        div {
+            div {
+                .btn-primary:hover {
+                    background-color: #4d77ff;
+                }
+            }
+        }
+    }
+}   
 
 /* MAIN ---------------------------------------------------------------------------------------------- */
 
@@ -164,7 +195,7 @@ header nav .navbar-nav {
 }
 
 .original-inicio-card-icon {
-    background-color: #AFEEEE;
+    background-color: $color-aux-2;
     width: 4rem;
     height: 4rem;
     padding: 1rem 1rem;
@@ -212,6 +243,58 @@ header nav .navbar-nav {
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+/* HERRAMIENTAS ---------------------------------------------------------------------------------------------- */
+
+.original-img-style-3 {     /* ----------Incluyendo Mixin de Estilo de Imágen-------------------------------------------------- */
+    @include original-img-style-cover(20rem);
+}
+
+.original-herramientas-section-bg {
+    background-color: rgba(0, 0, 0, 0.911);
+}
+
+.original-btn-subnav-1 {
+    @include original-btn-custom($bg-color:$color-resalte-secundario,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-2 {
+    @include original-btn-custom($bg-color:$color-resalte-principal,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-3 {
+    @include original-btn-custom($bg-color:$color-terciario,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-4 {
+    @include original-btn-custom($bg-color:$color-paleta-claro,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-5 {
+    @include original-btn-custom($bg-color:$color-aux-3,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-6 {
+    @include original-btn-custom($bg-color:$color-aux-2,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-img-style-4 {     
+    @include original-img-style-cover(3rem);
+    width: 5rem;
+    border: none;
+}
+
+.original-img-style-5 {     
+    width: 60%;
+    height: 5rem;
+    object-fit: contain;
+}
+
+.directory-section {
+    .list-group-item {
+        border: 1px solid $color-aux-4;
+    }
 }
 
 
@@ -276,33 +359,6 @@ header nav .navbar-nav {
 /* HERRAMIENTAS ------------------------------------------------------------------ */
 /* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
 
-.topSectionsHerramientas {
-    display: inline-block;
-    width: 50%;
-    vertical-align: middle;
-    margin: auto;
-    padding-top: 5%;
-    padding-bottom: 10%;
-}
-
-.topSectionsHerramientas p{
-    font-size: 21px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.topSectionsHerramientas H1{
-    font-size: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.topSectionsHerramientas img{
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    border: 3px solid $color-texto-general;
-}
 
 .medSectionsHerramientas1 {
     display: inline-block;

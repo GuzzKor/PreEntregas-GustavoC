@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*-----MIXINES---------------------------------------------------------------*/
+/* ---------------------VARIABLES ------------------------------------------------------------------------------- */
 /* FUENTES ------------------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* RESETS GENERALES ------------------------------------------------------------------------------- */
@@ -9,15 +9,16 @@
   box-sizing: border-box;
 }
 
+/*
 section {
-  font-size: 0;
+    font-size:0;
 }
-
+*/
 a {
   color: inherit;
 }
 
-/* ---------------------VARIABLES ------------------------------------------------------------------------------- */
+/*-----MIXINES---------------------------------------------------------------*/
 /* ---------------------MAPAS ------------------------------------------------------------------------------- */
 /* TITULOS Y PARRAFOS GENERALES ------------------------------------------------------------------------------- */
 h1, h4, h3, h2 {
@@ -56,18 +57,78 @@ p {
   color: #1f2141;
 }
 
+/* CLASES UTILITARIAS  ---------------------------------------------------------------------------------------- */
+.color-rp {
+  color: #4a47c7;
+}
+
+.color-rs {
+  color: #f73656;
+}
+
+.color-r3 {
+  color: #ffad5c;
+}
+
+.color-p-claro {
+  color: #f8f9fa;
+}
+
+.color-p-oscuro {
+  color: #2d3268;
+}
+
+.color-t-general {
+  color: #1f2141;
+}
+
+.padd-y-chico {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.padd-y-medio {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.padd-y-grande {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.bg-black {
+  background-color: black;
+}
+
 /* SOBRESCRITURAS DE CLASES DE BOOTSTRAP GENERALES ------------------------------------------------------------------------------- */
-.btn-primary, .original-btn-primary-white {
-  font-family: "Poppins", sans-serif; /* reemplaza Fuente de botón suscribirse */
+.btn-primary {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
   background-color: #4a47c7;
-  border-color: #2d3268;
+  border: 2px solid #6462e0;
+  padding: 0.7rem 3rem 0.7rem 3rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0px;
+  width: auto;
 }
 
 .original-btn-primary-white {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: #4a47c7;
-  background-color: #ffffff;
+  background-color: #fff;
   border: none;
-  font-weight: 600;
+  padding: 0.7rem 3rem 0.7rem 3rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+  width: auto;
 }
 
 .card-title {
@@ -98,18 +159,16 @@ p {
   font-weight: 600;
 }
 
-header nav div div .btn-primary:hover, header nav div div .original-btn-primary-white:hover {
-  background-color: #4d77ff;
-}
-
 header nav .container-fluid {
   display: flex;
   justify-content: center;
 }
-
 header nav .navbar-nav {
   flex-grow: 1;
   justify-content: center;
+}
+header nav div div .btn-primary:hover {
+  background-color: #4d77ff;
 }
 
 /* MAIN ---------------------------------------------------------------------------------------------- */
@@ -170,7 +229,7 @@ header nav .navbar-nav {
   height: 22rem;
   width: 100%;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
   border: 3px solid #1f2141;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -179,6 +238,119 @@ header nav .navbar-nav {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+/* HERRAMIENTAS ---------------------------------------------------------------------------------------------- */
+.original-img-style-3 { /* ----------Incluyendo Mixin de Estilo de Imágen-------------------------------------------------- */
+  height: 20rem;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  border: 3px solid #1f2141;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.original-herramientas-section-bg {
+  background-color: rgba(0, 0, 0, 0.911);
+}
+
+.original-btn-subnav-1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f73656;
+  border: none;
+  padding: 1.2rem 0 1.2rem 0;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.original-btn-subnav-2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: #4a47c7;
+  border: none;
+  padding: 1.2rem 0 1.2rem 0;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.original-btn-subnav-3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffad5c;
+  border: none;
+  padding: 1.2rem 0 1.2rem 0;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.original-btn-subnav-4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f8f9fa;
+  border: none;
+  padding: 1.2rem 0 1.2rem 0;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.original-btn-subnav-5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: #b0c5ff;
+  border: none;
+  padding: 1.2rem 0 1.2rem 0;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.original-btn-subnav-6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  background-color: #AFEEEE;
+  border: none;
+  padding: 1.2rem 0 1.2rem 0;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.original-img-style-4 {
+  height: 3rem;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  border: 3px solid #1f2141;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 5rem;
+  border: none;
+}
+
+.original-img-style-5 {
+  width: 60%;
+  height: 5rem;
+  object-fit: contain;
+}
+
+.directory-section .list-group-item {
+  border: 1px solid #3d414c;
 }
 
 /* CONTACTO ---------------------------------------------------- */
@@ -239,34 +411,6 @@ header nav .navbar-nav {
 
 /* HERRAMIENTAS ------------------------------------------------------------------ */
 /* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
-.topSectionsHerramientas {
-  display: inline-block;
-  width: 50%;
-  vertical-align: middle;
-  margin: auto;
-  padding-top: 5%;
-  padding-bottom: 10%;
-}
-
-.topSectionsHerramientas p {
-  font-size: 21px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.topSectionsHerramientas H1 {
-  font-size: 50px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.topSectionsHerramientas img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  border: 3px solid #1f2141;
-}
-
 .medSectionsHerramientas1 {
   display: inline-block;
   box-sizing: border-box;
@@ -424,7 +568,6 @@ header nav .navbar-nav {
   font-size: 0.9rem;
   line-height: 2.3;
 }
-
 .contenidoFooter a {
   text-decoration: none;
 }/*# sourceMappingURL=estilos.css.map */

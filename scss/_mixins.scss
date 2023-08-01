@@ -4,7 +4,20 @@
     height: $height;
     width: 100%;
     border-radius: map-get($borde-radios, redondear-medio);
-    object-fit: cover;
+    object-fit: contain;
     border: 3px solid $color-texto-general;
     box-shadow: 5px 10px 30px rgba(0,0,0,0.2);
+}
+
+@mixin original-btn-custom ($fuente:$fuente-resalte,$fuente-size:1.10rem,$grosor:700,$color:#000000,$bg-color:$color-resalte-principal,$estilo-borde:2px solid $color-aux-1,$padding-x:0,$padding-y:0.7rem){
+    font-family: $fuente;
+    font-size: $fuente-size;
+    font-weight: $grosor;
+    color: $color;
+    background-color: $bg-color;
+    border: $estilo-borde;
+    padding: $padding-y $padding-x $padding-y $padding-x;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 6px;
 }
