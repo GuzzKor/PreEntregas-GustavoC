@@ -114,6 +114,21 @@ h4{
     padding-bottom: 6rem;
 }
 
+.padd-x-chico {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.padd-x-medio {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.padd-x-grande {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 .bg-black {
     background-color: black;
 }
@@ -303,61 +318,14 @@ header {
 /* CONTACTO ---------------------------------------------------- */
 /* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
 
-.seccionCentrada{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
-
-.seccionCentrada p{
-    font-size: 22px;
+.original-contacto-section {
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 3%;
-    color: $color-texto-general;
-    font-weight: 700;
 }
-
-.seccionCentrada H1{
-    font-size: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
-    color: $color-resalte-principal;
-}
-
 
 .formSections {
-    display: inline-block;
-    width: 50%;
-    vertical-align: middle;  
+    border-radius: map-get($borde-radios, redondear-medio);
 }
-
-.formularioGeneral{
-    background-color: $color-terciario;
-    padding-top: 50px;
-    padding-bottom: 80px;
-    padding-left: 10%;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color:#1f2141;
-}
-
-.formularioGeneral input, textarea {
-    width: 80%;
-    padding: 5px;
-    font-size: 15px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    color:$color-texto-general;
-    border-radius: 5px;
-    border: none;
-    background-color: #ffe7cf;
-    text-align: left;
-}
-
 
 /* TUTORIALES ------------------------------------------------------------- */
 /* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
