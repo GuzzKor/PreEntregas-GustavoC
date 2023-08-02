@@ -1,0 +1,54 @@
+/* CLASES UTILITARIAS  ---------------------------------------------------------------------------------------- */
+
+.color-rp {
+    color: $color-resalte-principal;
+}
+.color-rs {
+    color: $color-resalte-secundario;
+}
+.color-r3 {
+    color: $color-terciario;
+}
+.color-p-claro {
+    color: $color-paleta-claro;
+}
+.color-p-oscuro {
+    color: $color-paleta-oscuro;
+}
+.color-t-general {
+    color: $color-texto-general;
+}
+
+.padd-y-chico {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.padd-y-medio {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.padd-y-grande {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.padd-x-chico {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.padd-x-medio {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.padd-x-grande {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.bg-black {
+    background-color: black;
+}

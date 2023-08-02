@@ -1,0 +1,16 @@
+/* FOOTER ---------------------------------------------------------------------------------------------- */
+
+.footerGeneral{
+    background-color:$color-paleta-oscuro;
+ }
+
+ .contenidoFooter{
+    font-family: $fuente-contenido;
+    font-weight: 400;
+    color:#f0e6ff; 
+    font-size:0.9rem; 
+    line-height: 2.3;
+        a{
+            text-decoration: none;
+        }
+}

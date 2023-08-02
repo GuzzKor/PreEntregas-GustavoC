@@ -1,0 +1,30 @@
+/* ---------------------MAPAS ------------------------------------------------------------------------------- */
+
+$fuente-grosores: (
+    delgado: 200,
+    light: 300,
+    regular: 400,
+    medio: 500,
+    semi-bold: 600,
+    bold: 700,
+    super-bold: 800
+);
+
+$fuente-tamaños: (
+    extra-chico: 0.8rem,
+    chico: 0.9rem,
+    regular: 1rem,
+    medio: 1.2rem,
+    medio-grande: 1.6rem,
+    grande: 1.8rem,
+    super-grande: 2.5rem,
+    extra-grande: 3.5rem  
+);
+
+$borde-radios: (
+    redondear-chico: 5px,
+    redondear-medio: 10px,
+    redondear-grande: 20px,
+    redondear-semicirculo: 50%,
+    redondear-completo: 100%
+);

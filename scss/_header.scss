@@ -1,0 +1,33 @@
+/* HEADER NAV ---------------------------------------------------------------------------------------- */
+
+.header--logo {
+    width: auto;
+    height: 2.6rem;
+    padding-left: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: $fuente-resalte;  /* reemplaza Fuente de menú */
+    color: $color-paleta-oscuro;
+    font-weight: 600;
+  }
+
+header {
+    nav {
+        .container-fluid {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-nav {
+            flex-grow: 1;
+            justify-content: center;
+        }
+        div {
+            div {
+                .btn-primary:hover {
+                    background-color: #4d77ff;
+                }
+            }
+        }
+    }
+}   

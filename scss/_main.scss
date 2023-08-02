@@ -1,0 +1,204 @@
+
+/* MAIN ---------------------------------------------------------------------------------------------- */
+
+/* HOME ---------------------------------------------------------------------------------------------- */
+.original-inicio-section-bg {
+    background-image: $color-gradiente-primario;
+}
+
+.edit-inicio-card-img {
+    height: 18rem;
+    object-fit: cover;
+}
+
+.original-inicio-med-div {
+    border-radius: map-get($borde-radios, redondear-grande);
+    background-color: $color-resalte-principal;
+}
+
+.original-inicio-card-icon {
+    background-color: $color-aux-2;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem 1rem;
+    border-radius: map-get($borde-radios, redondear-semicirculo);
+}
+
+.edit-inicio-med-card-img {
+    height: 2rem;
+    object-fit: contain;
+    width: 2rem;
+}
+
+.edit-inicio-med-card {
+    border-radius: map-get($borde-radios, redondear-medio);
+    border: none;
+}
+
+.original-inicio-cardcolor-1 {
+    background-color: $color-terciario;
+    border-radius: map-get($borde-radios, redondear-medio);
+    height: 20rem;
+}
+
+.original-inicio-cardcolor-2 {
+    @extend .original-inicio-cardcolor-1;
+    background-color: $color-paleta-oscuro;
+}
+
+.original-inicio-cardcolor-3 {
+    @extend .original-inicio-cardcolor-1;
+    background-color: $color-resalte-secundario;
+}
+
+/* NOTICIAS ---------------------------------------------------------------------------------------------- */
+
+.original-noticias-section-bg {
+    background-image: linear-gradient(to right, #4774c7, #426dc9, #4065c9, #405dca, #4354c9, #4850c8, #4d4cc7, #5247c6, #5847c6, #5d47c5, #6247c5, #6747c4);
+}
+
+.original-img-style-1 {     /* ----------Incluyendo Mixin de Estilo de Imágen-------------------------------------------------- */
+    @include original-img-style-cover(22rem) 
+}
+
+.original-img-style-2 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* HERRAMIENTAS ---------------------------------------------------------------------------------------------- */
+
+.original-img-style-3 {     /* ----------Incluyendo Mixin de Estilo de Imágen-------------------------------------------------- */
+    @include original-img-style-cover(20rem);
+}
+
+.original-herramientas-section-bg {
+    background-color: rgba(0, 0, 0, 0.911);
+}
+
+.original-btn-subnav-1 {
+    @include original-btn-custom($bg-color:$color-resalte-secundario,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-2 {
+    @include original-btn-custom($bg-color:$color-resalte-principal,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-3 {
+    @include original-btn-custom($bg-color:$color-terciario,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-4 {
+    @include original-btn-custom($bg-color:$color-paleta-claro,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-5 {
+    @include original-btn-custom($bg-color:$color-aux-3,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-btn-subnav-6 {
+    @include original-btn-custom($bg-color:$color-aux-2,$estilo-borde:none,$padding-y:1.2rem);
+}
+
+.original-img-style-4 {     
+    @include original-img-style-cover(3rem);
+    width: 5rem;
+    border: none;
+}
+
+.original-img-style-5 {     
+    width: 60%;
+    height: 5rem;
+    object-fit: contain;
+}
+
+.directory-section {
+    .list-group-item {
+        border: 1px solid $color-aux-4;
+    }
+}
+
+
+/* CONTACTO ---------------------------------------------------- */
+/* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
+
+.original-contacto-section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.formSections {
+    border-radius: map-get($borde-radios, redondear-medio);
+}
+
+/* TUTORIALES ------------------------------------------------------------- */
+/* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
+
+.topSectionsTutoriales{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 1%;
+    background-color: $color-texto-general;
+    background-image: url(https://www.marketingaiinstitute.com/hs-fs/hubfs/2022%20Website%20Redesign/Background%20Graphics/MAII_Backgrounds_hexagonal-wave.jpg?width=1600&height=900&name=MAII_Backgrounds_hexagonal-wave.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.topSectionsTutoriales div{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.topSectionsTutoriales p{
+    font-size: 23px;
+    color: #fcfaff;
+}
+
+.topSectionsTutoriales h1{
+    font-size: 50px;
+    color: $color-resalte-principal;
+}
+
+.tutorialesTemas {
+    padding-top: 3%
+    
+}
+
+.tutorialesTemas div {
+    background-color: $color-resalte-principal;
+    font-size: 25px;
+    font-family: $fuente-resalte;
+    font-weight: 700;
+    color:$color-terciario;
+    display: inline-block;
+    width: 19%;
+    height: 90px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.medSectionsTutoriales1 {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 1% 5px 5% 3%;
+    text-align: left;
+}
+
+.medSectionsTutoriales2 {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 4% 2% 4%;
+    text-align: left;
+}
