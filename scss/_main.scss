@@ -2,13 +2,22 @@
 /* MAIN ---------------------------------------------------------------------------------------------- */
 
 /* HOME ---------------------------------------------------------------------------------------------- */
-.original-inicio-section-bg {
+.original-inicio-section-bg { /* ANIMACION EN FONDO DE COLOR------------------------------------------------------------------ */
     background-image: $color-gradiente-primario;
+    animation-name: cambioColor;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .edit-inicio-card-img {
     height: 18rem;
     object-fit: cover;
+    transition: height 0.3s;
+}
+
+.edit-inicio-card-img:hover{  /* Detalles de Transformacion ------------------------------------------------------------- */
+    height: 24rem;
 }
 
 .original-inicio-med-div {
@@ -39,6 +48,7 @@
     background-color: $color-terciario;
     border-radius: map-get($borde-radios, redondear-medio);
     height: 20rem;
+    transition: height 0.3s;
 }
 
 .original-inicio-cardcolor-2 {
@@ -51,6 +61,11 @@
     background-color: $color-resalte-secundario;
 }
 
+.original-inicio-cardcolor-1:hover{   /* Detalles de Transformacion ------------------------------------------------------------- */
+    height: 25rem;
+    width: 100%;
+}
+
 /* NOTICIAS ---------------------------------------------------------------------------------------------- */
 
 .original-noticias-section-bg {
@@ -58,7 +73,12 @@
 }
 
 .original-img-style-1 {     /* ----------Incluyendo Mixin de Estilo de Imágen-------------------------------------------------- */
-    @include original-img-style-cover(22rem) 
+    @include original-img-style-cover(22rem);
+    object-fit: cover;
+}
+
+.transform1 {
+    transform: skewY(10deg);
 }
 
 .original-img-style-2 {
@@ -77,7 +97,7 @@
     background-color: rgba(0, 0, 0, 0.911);
 }
 
-.original-btn-subnav-1 {
+.original-btn-subnav-1 {    /* ----------Incluyendo Mixin de Estilo de BOTONES -------------------------------------------------- */
     @include original-btn-custom($bg-color:$color-resalte-secundario,$estilo-borde:none,$padding-y:1.2rem);
 }
 
@@ -121,7 +141,7 @@
 
 
 /* CONTACTO ---------------------------------------------------- */
-/* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
+
 
 .original-contacto-section {
     padding-left: 10%;
@@ -133,72 +153,42 @@
 }
 
 /* TUTORIALES ------------------------------------------------------------- */
-/* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
 
-.topSectionsTutoriales{
+
+.topSectionsTutoriales{ /* ÉSTA SECCION LE DI ESTILO CASI SIN USO DE BOOTSTRAP para poder tener cosas que ANIDAR con Nesting */
     width: 100%;
     text-align: center;
-    padding-bottom: 4%;
-    padding-top: 1%;
-    background-color: $color-texto-general;
-    background-image: url(https://www.marketingaiinstitute.com/hs-fs/hubfs/2022%20Website%20Redesign/Background%20Graphics/MAII_Backgrounds_hexagonal-wave.jpg?width=1600&height=900&name=MAII_Backgrounds_hexagonal-wave.jpg);
-    background-size: cover;
-    background-blend-mode: overlay;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: #080044;
+    div{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        h1{
+            font-size: 2.7rem;
+            color: $color-resalte-principal;
+            @media screen and (max-width: 576px) {
+                font-size: 2.1rem;
+            }
+        }
+        p{
+            font-size: 1.2rem;
+            color: #fcfaff;
+            @media screen and (max-width: 576px) {
+                font-size: 1rem;
+            }
+        }
+    }
+    img{
+        height: 13rem;
+    }
 }
 
-.topSectionsTutoriales div{
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 3%;
-    padding-bottom: 2%;
+.hover-1 {
+    background-color: none;
 }
 
-.topSectionsTutoriales p{
-    font-size: 23px;
-    color: #fcfaff;
-}
-
-.topSectionsTutoriales h1{
-    font-size: 50px;
-    color: $color-resalte-principal;
-}
-
-.tutorialesTemas {
-    padding-top: 3%
-    
-}
-
-.tutorialesTemas div {
-    background-color: $color-resalte-principal;
-    font-size: 25px;
-    font-family: $fuente-resalte;
-    font-weight: 700;
-    color:$color-terciario;
-    display: inline-block;
-    width: 19%;
-    height: 90px;
-    vertical-align: middle;
-    text-align: center;
-    padding: 15px;
-    margin: 0 auto;
-    border-radius: 5px;
-}
-
-.medSectionsTutoriales1 {
-    display: inline-block;
-    width: 40%;
-    vertical-align: middle;
-    margin: 0 auto;
-    padding: 1% 5px 5% 3%;
-    text-align: left;
-}
-
-.medSectionsTutoriales2 {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 60%;
-    margin: 0 auto;
-    padding: 100px 4% 2% 4%;
-    text-align: left;
+.hover-1:hover { /* Detalles de Transformacion ------------------------------------------------------------- */
+    background-color: $color-terciario;
 }

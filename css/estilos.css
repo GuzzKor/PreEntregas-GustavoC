@@ -77,6 +77,22 @@ a {
   background-color: black;
 }
 
+.redondear-chico {
+  border-radius: 5px;
+}
+
+.redondear-medio {
+  border-radius: 10px;
+}
+
+.redondear-grande {
+  border-radius: 20px;
+}
+
+.redondear-semicirculo {
+  border-radius: 50%;
+}
+
 /* SOBRE ESCRITURAS DE TITULOS Y PARRAFOS GENERALES ------------------------------------------------------------------------------- */
 h1, h4, h3, h2 {
   text-decoration: none;
@@ -186,13 +202,22 @@ header nav div div .btn-primary:hover {
 
 /* MAIN ---------------------------------------------------------------------------------------------- */
 /* HOME ---------------------------------------------------------------------------------------------- */
-.original-inicio-section-bg {
+.original-inicio-section-bg { /* ANIMACION EN FONDO DE COLOR------------------------------------------------------------------ */
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  animation-name: cambioColor;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .edit-inicio-card-img {
   height: 18rem;
   object-fit: cover;
+  transition: height 0.3s;
+}
+
+.edit-inicio-card-img:hover { /* Detalles de Transformacion ------------------------------------------------------------- */
+  height: 24rem;
 }
 
 .original-inicio-med-div {
@@ -223,6 +248,7 @@ header nav div div .btn-primary:hover {
   background-color: #ffad5c;
   border-radius: 10px;
   height: 20rem;
+  transition: height 0.3s;
 }
 
 .original-inicio-cardcolor-2 {
@@ -231,6 +257,11 @@ header nav div div .btn-primary:hover {
 
 .original-inicio-cardcolor-3 {
   background-color: #f73656;
+}
+
+.original-inicio-cardcolor-1:hover, .original-inicio-cardcolor-2:hover, .original-inicio-cardcolor-3:hover { /* Detalles de Transformacion ------------------------------------------------------------- */
+  height: 25rem;
+  width: 100%;
 }
 
 /* NOTICIAS ---------------------------------------------------------------------------------------------- */
@@ -245,6 +276,11 @@ header nav div div .btn-primary:hover {
   object-fit: contain;
   border: 3px solid #1f2141;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.transform1 {
+  transform: skewY(10deg);
 }
 
 .original-img-style-2 {
@@ -267,7 +303,7 @@ header nav div div .btn-primary:hover {
   background-color: rgba(0, 0, 0, 0.911);
 }
 
-.original-btn-subnav-1 {
+.original-btn-subnav-1 { /* ----------Incluyendo Mixin de Estilo de BOTONES -------------------------------------------------- */
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
@@ -367,7 +403,6 @@ header nav div div .btn-primary:hover {
 }
 
 /* CONTACTO ---------------------------------------------------- */
-/* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
 .original-contacto-section {
   padding-left: 10%;
   padding-right: 10%;
@@ -378,72 +413,46 @@ header nav div div .btn-primary:hover {
 }
 
 /* TUTORIALES ------------------------------------------------------------- */
-/* VERSION ANTIGUA - Pendiente de actualizar a Bootstrap */
-.topSectionsTutoriales {
+.topSectionsTutoriales { /* ÉSTA SECCION LE DI ESTILO CASI SIN USO DE BOOTSTRAP para poder tener cosas que ANIDAR con Nesting */
   width: 100%;
   text-align: center;
-  padding-bottom: 4%;
-  padding-top: 1%;
-  background-color: #1f2141;
-  background-image: url(https://www.marketingaiinstitute.com/hs-fs/hubfs/2022%20Website%20Redesign/Background%20Graphics/MAII_Backgrounds_hexagonal-wave.jpg?width=1600&height=900&name=MAII_Backgrounds_hexagonal-wave.jpg);
-  background-size: cover;
-  background-blend-mode: overlay;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color: #080044;
 }
-
 .topSectionsTutoriales div {
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 3%;
-  padding-bottom: 2%;
 }
-
-.topSectionsTutoriales p {
-  font-size: 23px;
-  color: #fcfaff;
-}
-
-.topSectionsTutoriales h1, .topSectionsTutoriales h2, .topSectionsTutoriales h3, .topSectionsTutoriales h4 {
-  font-size: 50px;
+.topSectionsTutoriales div h1, .topSectionsTutoriales div h2, .topSectionsTutoriales div h3, .topSectionsTutoriales div h4 {
+  font-size: 2.7rem;
   color: #4a47c7;
 }
-
-.tutorialesTemas {
-  padding-top: 3%;
+@media screen and (max-width: 576px) {
+  .topSectionsTutoriales div h1, .topSectionsTutoriales div h2, .topSectionsTutoriales div h3, .topSectionsTutoriales div h4 {
+    font-size: 2.1rem;
+  }
+}
+.topSectionsTutoriales div p {
+  font-size: 1.2rem;
+  color: #fcfaff;
+}
+@media screen and (max-width: 576px) {
+  .topSectionsTutoriales div p {
+    font-size: 1rem;
+  }
+}
+.topSectionsTutoriales img {
+  height: 13rem;
 }
 
-.tutorialesTemas div {
-  background-color: #4a47c7;
-  font-size: 25px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: #ffad5c;
-  display: inline-block;
-  width: 19%;
-  height: 90px;
-  vertical-align: middle;
-  text-align: center;
-  padding: 15px;
-  margin: 0 auto;
-  border-radius: 5px;
+.hover-1 {
+  background-color: none;
 }
 
-.medSectionsTutoriales1 {
-  display: inline-block;
-  width: 40%;
-  vertical-align: middle;
-  margin: 0 auto;
-  padding: 1% 5px 5% 3%;
-  text-align: left;
-}
-
-.medSectionsTutoriales2 {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 60%;
-  margin: 0 auto;
-  padding: 100px 4% 2% 4%;
-  text-align: left;
+.hover-1:hover { /* Detalles de Transformacion ------------------------------------------------------------- */
+  background-color: #ffad5c;
 }
 
 /* FOOTER ---------------------------------------------------------------------------------------------- */
@@ -460,4 +469,40 @@ header nav div div .btn-primary:hover {
 }
 .contenidoFooter a {
   text-decoration: none;
+}
+
+@keyframes cambioColor {
+  0% {
+    background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  10% {
+    background: linear-gradient(-225deg, #D2F6F2 0%, #FFECF7 100%);
+  }
+  20% {
+    background: linear-gradient(-225deg, #B6F0F4 0%, #FFDFF4 100%);
+  }
+  30% {
+    background: linear-gradient(-225deg, #9AEAF7 0%, #FFD2F2 100%);
+  }
+  40% {
+    background: linear-gradient(-225deg, #7EE4F9 0%, #FFC4EF 100%);
+  }
+  50% {
+    background: linear-gradient(-225deg, #51b4ee 0%, #a788e4 100%);
+  }
+  60% {
+    background: linear-gradient(-225deg, #7EE4F9 0%, #FFC4EF 100%);
+  }
+  70% {
+    background: linear-gradient(-225deg, #9AEAF7 0%, #FFD2F2 100%);
+  }
+  80% {
+    background: linear-gradient(-225deg, #B6F0F4 0%, #FFDFF4 100%);
+  }
+  90% {
+    background: linear-gradient(-225deg, #D2F6F2 0%, #FFECF7 100%);
+  }
+  100% {
+    background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
 }/*# sourceMappingURL=estilos.css.map */

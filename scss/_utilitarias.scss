@@ -52,3 +52,19 @@
 .bg-black {
     background-color: black;
 }
+
+.redondear-chico {
+    border-radius: map-get($borde-radios, redondear-chico);
+}
+
+.redondear-medio {
+    border-radius: map-get($borde-radios, redondear-medio);
+}
+
+.redondear-grande {
+    border-radius: map-get($borde-radios, redondear-grande);
+}
+
+.redondear-semicirculo {
+    border-radius: map-get($borde-radios, redondear-semicirculo);
+}
