@@ -2,8 +2,10 @@
 @import 'fuentes.scss';
 @import 'resets.scss';
 @import 'mixins.scss';
-
-
+/*
+body * {
+    border: 1px solid red !important;
+}*/
 /* ---------------------MAPAS ------------------------------------------------------------------------------- */
 
 $fuente-grosores: (
