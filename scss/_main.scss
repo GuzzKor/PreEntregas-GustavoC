@@ -142,6 +142,12 @@
 
 /* CONTACTO ---------------------------------------------------- */
 
+@media screen and (max-width: 576px) {
+    .h-custom{
+        font-size: map-get($fuente-tamaños, medio-grande);
+    }
+}
+
 
 .original-contacto-section {
     padding-left: 10%;

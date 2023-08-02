@@ -403,6 +403,11 @@ header nav div div .btn-primary:hover {
 }
 
 /* CONTACTO ---------------------------------------------------- */
+@media screen and (max-width: 576px) {
+  .h-custom {
+    font-size: 1.6rem;
+  }
+}
 .original-contacto-section {
   padding-left: 10%;
   padding-right: 10%;
