@@ -6,11 +6,16 @@
     padding-left: 1rem;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    font-family: $fuente-resalte;  /* reemplaza Fuente de menú */
-    color: $color-paleta-oscuro;
-    font-weight: 600;
-  }
+.navbar-light .navbar-nav{
+    .nav-link {
+        font-family: $fuente-resalte;  /* reemplaza Fuente de menú */
+        color: $color-paleta-oscuro;
+        font-weight: 600;
+    }
+    .nav-invertir-color{
+        color: $color-paleta-claro;
+    }
+}
 
 header {
     nav {

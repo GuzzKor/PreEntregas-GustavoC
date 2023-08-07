@@ -5,7 +5,7 @@
 .original-inicio-section-bg { /* ANIMACION EN FONDO DE COLOR------------------------------------------------------------------ */
     background-image: $color-gradiente-primario;
     animation-name: cambioColor;
-    animation-duration: 6s;
+    animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -131,6 +131,10 @@
     width: 60%;
     height: 5rem;
     object-fit: contain;
+    animation-name: iconCrece;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .directory-section {
@@ -155,7 +159,7 @@
 }
 
 .formSections {
-    border-radius: map-get($borde-radios, redondear-medio);
+    box-shadow: 5px 10px 80px rgba(0,0,0,0.15);
 }
 
 /* TUTORIALES ------------------------------------------------------------- */

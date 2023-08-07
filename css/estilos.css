@@ -187,6 +187,9 @@ p {
   color: #2d3268;
   font-weight: 600;
 }
+.navbar-light .navbar-nav .nav-invertir-color {
+  color: #f8f9fa;
+}
 
 header nav .container-fluid {
   display: flex;
@@ -205,7 +208,7 @@ header nav div div .btn-primary:hover {
 .original-inicio-section-bg { /* ANIMACION EN FONDO DE COLOR------------------------------------------------------------------ */
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   animation-name: cambioColor;
-  animation-duration: 6s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -396,6 +399,10 @@ header nav div div .btn-primary:hover {
   width: 60%;
   height: 5rem;
   object-fit: contain;
+  animation-name: iconCrece;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .directory-section .list-group-item {
@@ -414,7 +421,7 @@ header nav div div .btn-primary:hover {
 }
 
 .formSections {
-  border-radius: 10px;
+  box-shadow: 5px 10px 80px rgba(0, 0, 0, 0.15);
 }
 
 /* TUTORIALES ------------------------------------------------------------- */
@@ -480,34 +487,126 @@ header nav div div .btn-primary:hover {
   0% {
     background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   }
+  5% {
+    background: linear-gradient(-198deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
   10% {
-    background: linear-gradient(-225deg, #D2F6F2 0%, #FFECF7 100%);
+    background: linear-gradient(-171deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  15% {
+    background: linear-gradient(-144deg, #E3FDF5 0%, #FFE6FA 100%);
   }
   20% {
-    background: linear-gradient(-225deg, #B6F0F4 0%, #FFDFF4 100%);
+    background: linear-gradient(-117deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  25% {
+    background: linear-gradient(-90deg, #E3FDF5 0%, #FFE6FA 100%);
   }
   30% {
-    background: linear-gradient(-225deg, #9AEAF7 0%, #FFD2F2 100%);
+    background: linear-gradient(-63deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  35% {
+    background: linear-gradient(-36deg, #E3FDF5 0%, #FFE6FA 100%);
   }
   40% {
-    background: linear-gradient(-225deg, #7EE4F9 0%, #FFC4EF 100%);
+    background: linear-gradient(-9deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  45% {
+    background: linear-gradient(18deg, #E3FDF5 0%, #FFE6FA 100%);
   }
   50% {
-    background: linear-gradient(-225deg, #51b4ee 0%, #a788e4 100%);
+    background: linear-gradient(45deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  55% {
+    background: linear-gradient(72deg, #E3FDF5 0%, #FFE6FA 100%);
   }
   60% {
-    background: linear-gradient(-225deg, #7EE4F9 0%, #FFC4EF 100%);
+    background: linear-gradient(99deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  65% {
+    background: linear-gradient(126deg, #E3FDF5 0%, #FFE6FA 100%);
   }
   70% {
-    background: linear-gradient(-225deg, #9AEAF7 0%, #FFD2F2 100%);
+    background: linear-gradient(153deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  75% {
+    background: linear-gradient(180deg, #E3FDF5 0%, #FFE6FA 100%);
   }
   80% {
-    background: linear-gradient(-225deg, #B6F0F4 0%, #FFDFF4 100%);
+    background: linear-gradient(-153deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  85% {
+    background: linear-gradient(-126deg, #E3FDF5 0%, #FFE6FA 100%);
   }
   90% {
-    background: linear-gradient(-225deg, #D2F6F2 0%, #FFECF7 100%);
+    background: linear-gradient(-99deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+  95% {
+    background: linear-gradient(-72deg, #E3FDF5 0%, #FFE6FA 100%);
   }
   100% {
-    background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background: linear-gradient(-45deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+}
+@keyframes iconCrece {
+  0% {
+    height: 5rem;
+  }
+  5% {
+    height: 5.1rem;
+  }
+  10% {
+    height: 5.2rem;
+  }
+  15% {
+    height: 5.3rem;
+  }
+  20% {
+    height: 5.4rem;
+  }
+  25% {
+    height: 5.5rem;
+  }
+  30% {
+    height: 5.6rem;
+  }
+  35% {
+    height: 5.7rem;
+  }
+  40% {
+    height: 5.8rem;
+  }
+  45% {
+    height: 5.9rem;
+  }
+  50% {
+    height: 6rem;
+  }
+  55% {
+    height: 5.9rem;
+  }
+  60% {
+    height: 5.8rem;
+  }
+  65% {
+    height: 5.7rem;
+  }
+  70% {
+    height: 5.6rem;
+  }
+  75% {
+    height: 5.5rem;
+  }
+  80% {
+    height: 5.4rem;
+  }
+  85% {
+    height: 5.3rem;
+  }
+  90% {
+    height: 5.2rem;
+  }
+  100% {
+    height: 5.1rem;
   }
 }/*# sourceMappingURL=estilos.css.map */
