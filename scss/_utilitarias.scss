@@ -53,6 +53,14 @@
     background-color: black;
 }
 
+.bg-color-rp {
+    background-color: $color-resalte-principal;
+}
+
+.bg-color-p-oscuro {
+    background-color: $color-paleta-oscuro;
+}
+
 .redondear-chico {
     border-radius: map-get($borde-radios, redondear-chico);
 }

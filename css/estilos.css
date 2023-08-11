@@ -77,6 +77,14 @@ a {
   background-color: black;
 }
 
+.bg-color-rp {
+  background-color: #4a47c7;
+}
+
+.bg-color-p-oscuro {
+  background-color: #2d3268;
+}
+
 .redondear-chico {
   border-radius: 5px;
 }
